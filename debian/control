@@ -1,0 +1,47 @@
+Source: dleyna-server
+Section: net
+Priority: optional
+Maintainer: Emanuele Aina <emanuele.aina@collabora.com> 
+Build-Depends: debhelper (>= 9),
+               autotools-dev,
+               libglib2.0-dev,
+               libgssdp-1.0-dev (>= 0.13.2),
+               libgupnp-1.0-dev (>= 0.20.3),
+               libgupnp-av-1.0-dev (>= 0.11.5),
+               libgupnp-dlna-2.0-dev (>= 0.9.4),
+               libsoup2.4-dev,
+               libdleyna-core-1.0-dev (>= 0.0.2)
+Standards-Version: 3.9.4
+Homepage: https://01.org/dleyna/
+Vcs-Git: git://anonscm.debian.org/collab-maint/pkg-dleyna-server.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/pkg-dleyna-server.git;a=summary
+
+Package: dleyna-server
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libdleyna-connector-dbus-1.0-1
+Pre-Depends: ${misc:Pre-Depends}
+Description: DBus service to interact with DLNA Digital Media Servers
+ dleyna-server is a DBus user session service that allows clients to
+ discover and manipulate DLNA Digital Media servers (DMS).
+ .
+ dLeyna is an umbrella project hosting a number of middleware components
+ designed to make it easy for developers to integrate DLNA functionality into
+ their applications.
+
+Package: dleyna-server-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: dleyna-server (= ${binary:Version}),
+         ${misc:Depends}
+Description: DBus service to interact with DLNA Digital Media Servers (debug files)
+ dleyna-server is a DBus user session service that allows clients to
+ discover and manipulate DLNA Digital Media servers (DMS).
+ .
+ dLeyna is an umbrella project hosting a number of middleware components
+ designed to make it easy for developers to integrate DLNA functionality into
+ their applications.
+ .
+ This package contains the debug files.
