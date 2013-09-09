@@ -1,3 +1,0 @@
-# The shipped library is an implementation detail and should be used solely by
-# the dleyna-server-service DBus service
-dleyna-server: package-name-doesnt-match-sonames libdleyna-server-1.0-1

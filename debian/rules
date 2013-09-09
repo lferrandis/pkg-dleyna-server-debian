@@ -5,13 +5,14 @@
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-	    --libexecdir=/usr/lib/dleyna-server
+	    --libexecdir=/usr/lib/dleyna-server \
+	    --disable-silent-rules
 
 override_dh_strip:
 	dh_strip --dbg-package=dleyna-server-dbg
 
 override_dh_makeshlibs:
-	dh_makeshlibs -V
+	# we only ship our shared library in a private location
 
 override_dh_install:
 	dh_install --list-missing

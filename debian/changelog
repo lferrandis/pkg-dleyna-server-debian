@@ -1,3 +1,14 @@
+dleyna-server (0.1.2-1) unstable; urgency=low
+
+  * New upstream release.
+    + Ship the internal library in a private directory
+
+  * Enabled verbose logs to let blhc check for hardening flags
+
+  * Picked up maintenance from Emanuele
+
+ -- Ludovic Ferrandis <ludovic.ferrandis@intel.com>  Mon, 09 Sep 2013 14:52:55 +0200
+
 dleyna-server (0.1.1-1) unstable; urgency=low
 
   * Initial release. (Closes: #710237)

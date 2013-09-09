@@ -1,5 +1,5 @@
 etc/dleyna-server-service.conf
 usr/lib/dleyna-server/
-usr/lib/*/*.so.*
+usr/lib/*/*/*.so.*
 usr/lib/*/pkgconfig/
 usr/share/dbus-1
